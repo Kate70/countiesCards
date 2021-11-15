@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+.main {
+  height: 100vh;
+  background-image: url("backgr.jpg");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+.gradient {
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 1%,
+    rgba(0, 0, 0, 1) 68%
+  );
+}
+.wrapper{
+  height: 100%;
+  display: grid;
+
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+ 
+}
+
+
+ 
+
+.buttons:first-child {
+  
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  
+  margin-top: 50px;
+  margin-right: 360px;
+  margin-left: 100px;
+}
+.buttons:nth-child(2) {
+  grid-area: 'europe';
+  grid-column-start: 3;
+  grid-column-end:5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+ margin-top: 50px;
+  
+  margin-left: 360px;
+}
+.buttons:nth-child(3) {
+  
+   grid-column-start: 1;
+  grid-column-end:1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  
+ margin-top: 70px ;
+ margin-right: 200px;
+ 
+
+}
+.buttons:nth-child(4) {
+  
+grid-column-start: 4;
+ grid-column-end:4;
+ grid-row-start: 2;
+ grid-row-end: 2;
+ font-size: 36;
+ margin-right: 0;
+ margin-top: 60px ;
+ margin-left: 180px;
+
+ 
+}
+.buttons:nth-child(5) {
+  
+  grid-column-start: 1;
+ grid-column-end:3;
+ grid-row-start: 3;
+ grid-row-end: 3;
+ 
+ 
+ margin-top: 99px;
+ margin-right: 200px;
+ 
+ 
+ 
+}
+.buttons:nth-child(6) {
+  
+ grid-column-start: 3;
+ grid-column-end:5;
+ grid-row-start: 3;
+ grid-row-end: 3;
+ 
+
+ margin-top: 99px;
+ margin-left: 360px;
+}
+.buttons{
+ 
+  padding: 9px;
+  padding-left: 35px;
+ margin: 5px;
+text-align: center;
+border: none;
+box-shadow: none;
+
+
+}
+.title{
+  font-size: 40px;
+  background-color: transparent;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 600;
+  color: bisque;
+}
+.title:hover{
+  color: rgb(0, 100, 131);
+  font-size: 50px;
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+article, li, ul,a ,button{border: none;}
