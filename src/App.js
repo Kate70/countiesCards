@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Main from "./components/Main/Main";
+import { useContext } from "react";
+import { CountryContext } from "./CountryContext";
 
 function App() {
+  const { names, setNames, country, setCountry } = useContext(CountryContext);
+
+  const getName = (item) => {
+    const { id, name, url, checked } = item;
+    setCountry({ id, name, url, checked });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Main names={names} setNames={setNames} getName={getName} />
+    </>
   );
 }
 
