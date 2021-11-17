@@ -47,6 +47,7 @@ ul, li, a, link{
 
 }
 .name:hover{
-    font-size: 32px;
+    transform: scale(1.4);
+    
     transition: 0.5s linear;
 }
